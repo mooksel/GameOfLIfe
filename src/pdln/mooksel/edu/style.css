@@ -1,0 +1,32 @@
+.display_wrap {
+    -fx-border-style: solid;
+    -fx-border-color: #7e7e7e;
+    -fx-border-width: 5px;
+    -fx-border-radius: 5px;
+}
+
+.root {
+    -fx-background-color: #cacaca;
+}
+
+.button {
+    -fx-background-color: #878787;
+    -fx-border-radius: 20px;
+}
+
+.play_button:hover {
+    -fx-background-color: #444444;
+}
+
+.header {
+    -fx-background-color: #b7b7b7;
+}
+
+.exit_button {
+    -fx-background-color: #ff3936;
+}
+
+.container {
+    -fx-background-color: #a6a6a6;
+    -fx-border-radius: 20px;
+}

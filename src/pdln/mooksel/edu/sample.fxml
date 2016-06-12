@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdln.mooksel.edu.GUIController">
+   <children>
+      <Canvas fx:id="display" height="400.0" width="600.0">
+         <effect>
+            <BoxBlur />
+         </effect></Canvas>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="startStopButton" mnemonicParsing="false" onAction="#startStopButtonClick" text="Button">
+               <HBox.margin>
+                  <Insets left="11.0" top="9.0" />
+               </HBox.margin></Button>
+            <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clearButtonClick" text="Clear">
+               <HBox.margin>
+                  <Insets left="22.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Label text="speed">
+               <HBox.margin>
+                  <Insets left="20.0" top="13.0" />
+               </HBox.margin>
+            </Label>
+            <Slider fx:id="speedSlider" onDragDetected="#onSpeedSliderDragDetected">
+               <HBox.margin>
+                  <Insets left="9.0" top="15.0" />
+               </HBox.margin></Slider>
+            <Label fx:id="SpeedLabel">
+               <HBox.margin>
+                  <Insets left="16.0" top="13.0" />
+               </HBox.margin></Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>
